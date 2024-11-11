@@ -1,0 +1,19 @@
+<div class="form-container">
+    <h2>Editar Curso</h2>
+    <form (ngSubmit)="saveChanges()">
+      <label for="courseName">Nome do Curso</label>
+      <input id="courseName" [(ngModel)]="courseName" name="courseName" required>
+  
+      <label for="institution">Instituição</label>
+      <input id="institution" [(ngModel)]="institution" name="institution" required>
+  
+      <label for="description">Descrição</label>
+      <input id="description" [(ngModel)]="description" name="description" required>
+  
+      <label for="imageUrl">URL da Imagem</label>
+      <input id="imageUrl" [(ngModel)]="imageUrl" name="imageUrl" required>
+  
+      <button type="submit">Salvar</button>
+    </form>
+  </div>
+  

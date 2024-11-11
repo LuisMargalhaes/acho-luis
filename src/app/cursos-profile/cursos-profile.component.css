@@ -1,0 +1,128 @@
+/* Estilos Gerais */
+.profile-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  /* Header da Empresa */
+  .company-header {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .company-logo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .company-info {
+    flex: 1;
+  }
+  
+  .company-info h2 {
+    margin: 0;
+    font-size: 24px;
+    color: #005f73;
+  }
+  
+  .company-info p {
+    margin-top: 5px;
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Informações de Contato */
+  .contact-info {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .contact-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .contact-item {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-item span {
+    font-weight: bold;
+    color: #005f73;
+  }
+  
+  /* Cursos Disponíveis */
+  h3 {
+    font-size: 20px;
+    color: #005f73;
+    margin-bottom: 10px;
+  }
+  
+  .course-card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    background-color: #f9f9f9;
+  }
+  
+  .course-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .course-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+  
+  .course-info {
+    flex: 1;
+  }
+  
+  .course-info h4 {
+    margin: 0;
+    font-size: 18px;
+    color: #005f73;
+  }
+  
+  .course-info h5 {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #005f73;
+  }
+  
+  .course-info p {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .edit-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: transparent; /* Fundo transparente */
+    color: #005f73; /* Cor azul para o ícone */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; /* Tamanho do ícone */
+}
+
+.edit-button:hover {
+    background-color: transparent; /* Sem efeito de fundo */
+}

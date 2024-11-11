@@ -1,0 +1,141 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section.profile {
+    display: flex;
+    width: 100%;
+}
+
+/* Barra lateral (sidebar) */
+.sidebar {
+    width: 20%;
+    margin-right: 20px;
+    border: 2px solid #173768;
+    border-radius: 8px;
+    padding: 15px;
+    background-color: #fff;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: #333;
+    padding: 10px;
+    display: block;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar ul li a i {
+    margin-right: 8px;
+}
+
+.sidebar ul li a:hover {
+    background-color: #ff6a33;
+    color: #fff;
+}
+
+/* Perfil do usuário */
+.profile__left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.img_nome {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.profile-image {
+    width: 190px;
+    height: 180px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-name-edit {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.profile-name-edit h2 {
+    font-size: 22px;
+    margin: 0;
+}
+
+.profile-name-edit p {
+    margin: 0;
+    color: #555;
+}
+
+.edit-profile {
+    font-size: 14px;
+    color: #ff6a33;
+    text-decoration: none;
+    margin-top: 5px;
+}
+
+/* Estilo para a área de informações pessoais */
+.profile-info {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.profile-info-line {
+    margin-bottom: 15px; /* Aumentado o espaçamento entre as informações */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.profile-info-line i {
+    margin-right: 10px;
+    color: #ff6a33;
+}
+
+.profile-info-line strong {
+    color: #333;
+}
+
+.profile-info-line span {
+    color: #555;
+    margin-left: 5px;
+}
+
+/* Ícones de redes sociais */
+.profile-social {
+    margin-top: 20px;
+}
+
+.profile-social strong {
+    font-weight: bold;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    font-size: 30px;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #ff6a33;
+}
