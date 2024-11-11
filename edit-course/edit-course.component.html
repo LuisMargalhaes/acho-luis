@@ -1,0 +1,86 @@
+<div class="edit-course-container">
+  <h2>Editar Curso</h2>
+  
+  <div class="image-section">
+    <img src="assets/default-image.jpg" alt="Imagem do Curso" class="course-image">
+    <button class="upload-btn">Alterar ou Adicionar Imagem</button>
+  </div>
+
+  <form (ngSubmit)="onSubmit()" class="edit-course-form">
+    <div class="form-group">
+      <label for="name">Nome da Escola</label>
+      <input id="name" type="text" [(ngModel)]="course.name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="complement">Complemento</label>
+      <input id="complement" type="text" [(ngModel)]="course.complement" name="complement">
+    </div>
+
+    <div class="form-group">
+      <label for="description">Descrição</label>
+      <textarea id="description" [(ngModel)]="course.description" name="description"></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="days">Dias de Funcionamento</label>
+      <input id="days" type="text" [(ngModel)]="course.days" name="days">
+    </div>
+
+    <div class="form-group">
+      <label for="hours">Horário de Atendimento</label>
+      <input id="hours" type="text" [(ngModel)]="course.hours" name="hours">
+    </div>
+
+    <h3>Endereço</h3>
+    <div class="address-group">
+      <div class="form-group">
+        <label for="cep">CEP</label>
+        <input id="cep" type="text" [(ngModel)]="course.cep" name="cep">
+      </div>
+
+      <div class="form-group">
+        <label for="state">Estado</label>
+        <input id="state" type="text" [(ngModel)]="course.state" name="state">
+      </div>
+
+      <div class="form-group">
+        <label for="city">Cidade</label>
+        <input id="city" type="text" [(ngModel)]="course.city" name="city">
+      </div>
+
+      <div class="form-group">
+        <label for="district">Bairro</label>
+        <input id="district" type="text" [(ngModel)]="course.district" name="district">
+      </div>
+
+      <div class="form-group">
+        <label for="street">Rua</label>
+        <input id="street" type="text" [(ngModel)]="course.street" name="street">
+      </div>
+
+      <div class="form-group">
+        <label for="number">Número</label>
+        <input id="number" type="text" [(ngModel)]="course.number" name="number">
+      </div>
+    </div>
+
+    <h3>Contato</h3>
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input id="email" type="email" [(ngModel)]="course.email" name="email">
+    </div>
+
+    <div class="form-group">
+      <label for="phone">Número de Telefone</label>
+      <input id="phone" type="text" [(ngModel)]="course.phone" name="phone">
+    </div>
+
+    <div class="form-group">
+      <label for="additionalInfo">Informações Adicionais</label>
+      <textarea id="additionalInfo" [(ngModel)]="course.additionalInfo" name="additionalInfo"></textarea>
+    </div>
+
+    <button type="submit" class="save-btn">Salvar</button>
+  </form>
+</div>
